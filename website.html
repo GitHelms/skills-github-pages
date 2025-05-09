@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WonneGau Energy - Ihr Partner für solare Energie in Rheinhessen</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .nav-link {
+            position: relative;
+        }
+        .nav-link:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -2px;
+            left: 0;
+            background-color: #FACC15;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover:after {
+            width: 100%;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        .project-card {
+            transition: all 0.3s ease;
+        }
+        .project-card:hover {
+            transform: scale(1.02);
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white shadow-md z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <div class="flex items-center">
+                        <i class="fas fa-solar-panel text-yellow-400 text-2xl mr-2"></i>
+                        <span class="text-xl font-bold text-gray-800">WonneGau <span class="text-blue-600">Energy</span></span>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="nav-link text-gray-700 hover:text-gray-900">Start</a>
+                    <a href="#about" class="nav-link text-gray-700 hover:text-gray-900">Über uns</a>
+                    <a href="#services" class="nav-link text-gray-700 hover:text-gray-900">Leistungen</a>
+                    <a href="#target" class="nav-link text-gray-700 hover:text-gray-900">Zielgruppen</a>
+                    <a href="#projects" class="nav-link text-gray-700 hover:text-gray-900">Projekte</a>
+                    <a href="#contact" class="nav-link text-gray-700 hover:text-gray-900">Kontakt</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-gray-700 focus:outline-none">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-32 pb-20 md:pt-40 md:pb-28 bg-gradient-to-b from-blue-50 to-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-12 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-800 leading-tight mb-6">
+                        Sonnenenergie <span class="text-yellow-400">nutzen.</span><br>
+                        Zukunft <span class="text-blue-600">gestalten.</span>
+                    </h1>
+                    <p class="text-lg text-gray-600 mb-8">
+                        Ihr verlässlicher Partner für Photovoltaik-Komplettlösungen in Rheinhessen und Umgebung. 
+                        Nachhaltig, effizient und regional verwurzelt.
+                    </p>
+                    <a href="#contact" class="bg-yellow-400 hover:bg-yellow-500 text-gray-800 font-semibold px-8 py-3 rounded-lg shadow-lg transition duration-300 inline-block">
+                        Jetzt beraten lassen
+                    </a>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1472&q=80" 
+                         alt="Photovoltaikanlage auf Dach" 
+                         class="rounded-lg shadow-xl w-full h-auto">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Über WonneGau Energy</h2>
+                <div class="w-20 h-1 bg-yellow-400 mx-auto"></div>
+            </div>
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-12 md:mb-0 md:pr-12">
+                    <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80" 
+                         alt="Team von WonneGau Energy" 
+                         class="rounded-lg shadow-lg w-full h-auto">
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-6">Ihr regionaler Partner für Solarenergie</h3>
+                    <p class="text-gray-600 mb-6">
+                        Seit unserer Gründung in Rheinhessen setzen wir uns für die Energiewende in unserer Region ein. 
+                        Unser erfahrenes Team begleitet Sie von der ersten Beratung bis zur fertigen Anlage – 
+                        kompetent, transparent und mit Leidenschaft für erneuerbare Energien.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <i class="fas fa-leaf text-yellow-400 text-xl"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-lg font-medium text-gray-800">Nachhaltigkeit</h4>
+                                <p class="text-gray-600">
+                                    Wir handeln im Einklang mit der Natur und für kommende Generationen.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <i class="fas fa-bolt text-blue-500 text-xl"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-lg font-medium text-gray-800">Effizienz</h4>
+                                <p class="text-gray-600">
+                                    Maximale Energieausbeute durch optimierte Systeme und moderne Technik.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <i class="fas fa-handshake text-gray-600 text-xl"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-lg font-medium text-gray-800">Verlässlichkeit</h4>
+                                <p class="text-gray-600">
+                                    Langfristige Partnerschaften durch Qualität und exzellenten Service.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Unsere Leistungen</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Von der Planung bis zur Wartung – wir bieten alles aus einer Hand für Ihre Photovoltaikanlage.
+                </p>
+                <div class="w-20 h-1 bg-yellow-400 mx-auto mt-4"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="service-card bg-white p-8 rounded-lg shadow-md transition duration-300">
+                    <div class="text-blue-500 mb-6">
+                        <i class="fas fa-drafting-compass text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Individuelle Planung</h3>
+                    <p class="text-gray-600">
+                        Maßgeschneiderte Konzepte für Ihr Dach oder Grundstück mit 3D-Visualisierung und Wirtschaftlichkeitsberechnung.
+                    </p>
+                </div>
+                <!-- Service 2 -->
+                <div class="service-card bg-white p-8 rounded-lg shadow-md transition duration-300">
+                    <div class="text-yellow-400 mb-6">
+                        <i class="fas fa-tools text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Fachgerechte Installation</h3>
+                    <p class="text-gray-600">
+                        Montage durch zertifizierte Fachkräfte mit hochwertigen Komponenten für maximale Langlebigkeit.
+                    </p>
+                </div>
+                <!-- Service 3 -->
+                <div class="service-card bg-white p-8 rounded-lg shadow-md transition duration-300">
+                    <div class="text-blue-500 mb-6">
+                        <i class="fas fa-clipboard-check text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Regelmäßige Wartung</h3>
+                    <p class="text-gray-600">
+                        Vorbeugende Inspektionen und Reinigung für optimale Leistung Ihrer Anlage über viele Jahre.
+                    </p>
+                </div>
+                <!-- Service 4 -->
+                <div class="service-card bg-white p-8 rounded-lg shadow-md transition duration-300">
+                    <div class="text-yellow-400 mb-6">
+                        <i class="fas fa-chart-line text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Echtzeit-Monitoring</h3>
+                    <p class="text-gray-600">
+                        Intelligente Überwachungssysteme für transparente Einblicke in Ihre Energieerzeugung und -nutzung.
+                    </p>
+                </div>
+                <!-- Service 5 -->
+                <div class="service-card bg-white p-8 rounded-lg shadow-md transition duration-300">
+                    <div class="text-blue-500 mb-6">
+                        <i class="fas fa-euro-sign text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Förderberatung</h3>
+                    <p class="text-gray-600">
+                        Unterstützung bei Anträgen für staatliche Zuschüsse und günstige Kredite – wir kennen alle Fördertöpfe.
+                    </p>
+                </div>
+                <!-- Service 6 -->
+                <div class="service-card bg-white p-8 rounded-lg shadow-md transition duration-300">
+                    <div class="text-yellow-400 mb-6">
+                        <i class="fas fa-drone-alt text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Drohneninspektion</h3>
+                    <p class="text-gray-600">
+                        Modernste Thermografie zur Fehlererkennung ohne Risiko – besonders für große Anlagen ideal.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Target Groups Section -->
+    <section id="target" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Für wen wir arbeiten</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Individuelle Lösungen für unterschiedliche Bedürfnisse – wir haben für jeden die passende Photovoltaik-Lösung.
+                </p>
+                <div class="w-20 h-1 bg-yellow-400 mx-auto mt-4"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Private -->
+                <div class="bg-gray-50 p-8 rounded-lg shadow-sm border border-gray-100">
+                    <div class="text-center mb-6">
+                        <i class="fas fa-home text-4xl text-blue-500"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4 text-center">Privathaushalte</h3>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-yellow-400 mt-1 mr-2"></i>
+                            <span>Kosten senken mit eigenem Solarstrom</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-yellow-400 mt-1 mr-2"></i>
+                            <span>Unabhängigkeit vom Strommarkt</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-yellow-400 mt-1 mr-2"></i>
+                            <span>Kombination mit E-Auto und Wärmepumpe</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-yellow-400 mt-1 mr-2"></i>
+                            <span>Ästhetische Integration ins Hausdesign</span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Business -->
+                <div class="bg-gray-50 p-8 rounded-lg shadow-sm border border-gray-100">
+                    <div class="text-center mb-6">
+                        <i class="fas fa-building text-4xl text-yellow-400"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4 text-center">Unternehmen</h3>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-500 mt-1 mr-2"></i>
+                            <span>Senkung der Betriebskosten</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-500 mt-1 mr-2"></i>
+                            <span>Nachhaltigkeitsimage stärken</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-500 mt-1 mr-2"></i>
+                            <span>Großflächige Dach- und Freiflächenanlagen</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-500 mt-1 mr-2"></i>
+                            <span>Maßgeschneiderte Gewerbelösungen</span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Agriculture -->
+                <div class="bg-gray-50 p-8 rounded-lg shadow-sm border border-gray-100">
+                    <div class="text-center mb-6">
+                        <i class="fas fa-tractor text-4xl text-blue-500"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4 text-center">Landwirtschaft</h3>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-yellow-400 mt-1 mr-2"></i>
+                            <span>Doppelte Nutzung von Flächen</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-yellow-400 mt-1 mr-2"></i>
+                            <span>Strom für Stall und Hof</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-yellow-400 mt-1 mr-2"></i>
+                            <span>Agri-Photovoltaik für Felder</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-yellow-400 mt-1 mr-2"></i>
+                            <span>Speziallösungen für Hofladennetze</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advantages Section -->
+    <section class="py-20 bg-blue-600 text-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Ihre Vorteile mit WonneGau Energy</h2>
+                <div class="w-20 h-1 bg-yellow-400 mx-auto"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center p-6">
+                    <div class="bg-white bg-opacity-10 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-map-marker-alt text-3xl text-yellow-400"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Regional verwurzelt</h3>
+                    <p class="text-blue-100">
+                        Kurze Wege, schnelle Reaktionszeiten und tiefes Verständnis für die Region Rheinhessen.
+                    </p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="bg-white bg-opacity-10 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-shield-alt text-3xl text-yellow-400"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Komplettservice</h3>
+                    <p class="text-blue-100">
+                        Alles aus einer Hand – von der Beratung über die Installation bis zur langfristigen Wartung.
+                    </p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="bg-white bg-opacity-10 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-cogs text-3xl text-yellow-400"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Moderne Technik</h3>
+                    <p class="text-blue-100">
+                        Hochwertige Komponenten und innovative Lösungen für maximale Effizienz und Langlebigkeit.
+                    </p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="bg-white bg-opacity-10 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-hand-holding-heart text-3xl text-yellow-400"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Persönliche Betreuung</h3>
+                    <p class="text-blue-100">
+                        Individuelle Beratung ohne Standardlösungen – wir nehmen uns Zeit für Ihre Bedürfnisse.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Unsere Projekte</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Einblicke in realisierte Photovoltaik-Projekte in Rheinhessen und Umgebung.
+                </p>
+                <div class="w-20 h-1 bg-yellow-400 mx-auto mt-4"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="project-card bg-gray-50 rounded-lg overflow-hidden shadow-md">
+                    <img src="https://images.unsplash.com/photo-1508514177221-188e1eaf2d1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                         alt="Familienhaus mit PV-Anlage" 
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center mb-2">
+                            <i class="fas fa-map-marker-alt text-yellow-400 mr-2"></i>
+                            <span class="text-gray-600">Alzey</span>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Familienhaus mit 8 kWp</h3>
+                        <p class="text-gray-600 mb-4">
+                            Modernes Einfamilienhaus mit vollintegrierter PV-Anlage und Stromspeicher für 80% Autarkie.
+                        </p>
+                        <div class="flex justify-between text-sm text-gray-500">
+                            <span><i class="fas fa-solar-panel mr-1"></i> 24 Module</span>
+                            <span><i class="fas fa-bolt mr-1"></i> 8.000 kWh/Jahr</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-card bg-gray-50 rounded-lg overflow-hidden shadow-md">
+                    <img src="https://images.unsplash.com/photo-1497366754035-f1989681b601?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                         alt="Gewerbehalle mit PV-Anlage" 
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center mb-2">
+                            <i class="fas fa-map-marker-alt text-blue-500 mr-2"></i>
+                            <span class="text-gray-600">Worms</span>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Gewerbehalle mit 50 kWp</h3>
+                        <p class="text-gray-600 mb-4">
+                            Großflächige Anlage für Industriebetrieb mit Eigenverbrauchsoptimierung und Lastmanagement.
+                        </p>
+                        <div class="flex justify-between text-sm text-gray-500">
+                            <span><i class="fas fa-solar-panel mr-1"></i> 140 Module</span>
+                            <span><i class="fas fa-bolt mr-1"></i> 48.000 kWh/Jahr</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="project-card bg-gray-50 rounded-lg overflow-hidden shadow-md">
+                    <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1472&q=80" 
+                         alt="Landwirtschaftlicher Betrieb" 
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center mb-2">
+                            <i class="fas fa-map-marker-alt text-yellow-400 mr-2"></i>
+                            <span class="text-gray-600">Bingen</span>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Hof mit 30 kWp</h3>
+                        <p class="text-gray-600 mb-4">
+                            Agri-PV-Anlage für Weinbaubetrieb mit kombinierter Flächennutzung und Hofladenversorgung.
+                        </p>
+                        <div class="flex justify-between text-sm text-gray-500">
+                            <span><i class="fas fa-solar-panel mr-1"></i> 80 Module</span>
+                            <span><i class="fas fa-bolt mr-1"></i> 28.500 kWh/Jahr</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Kontaktieren Sie uns</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Wir beraten Sie gerne unverbindlich zu Ihrem Photovoltaik-Projekt in Rheinhessen.
+                </p>
+                <div class="w-20 h-1 bg-yellow-400 mx-auto mt-4"></div>
+            </div>
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/2 mb-12 md:mb-0 md:pr-12">
+                    <form class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-gray-700 font-medium mb-2">Ihr Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-gray-700 font-medium mb-2">Ihre E-Mail</label>
+                            <input type="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-gray-700 font-medium mb-2">Ihre Nachricht</label>
+                            <textarea id="message" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400"></textarea>
+                        </div>
+                        <button type="submit" class="bg-yellow-400 hover:bg-yellow-500 text-gray-800 font-semibold px-8 py-3 rounded-lg shadow-lg transition duration-300 w-full">
+                            Nachricht senden
+                        </button>
+                    </form>
+                </div>
+                <div class="md:w-1/2">
+                    <div class="bg-white p-8 rounded-lg shadow-md h-full">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-6">So erreichen Sie uns</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 mt-1">
+                                    <i class="fas fa-map-marker-alt text-yellow-400 text-xl"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-lg font-medium text-gray-800">Adresse</h4>
+                                    <p class="text-gray-600">
+                                        WonneGau Energy GmbH<br>
+                                        Solarstraße 15<br>
+                                        55232 Alzey
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 mt-1">
+                                    <i class="fas fa-phone-alt text-blue-500 text-xl"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-lg font-medium text-gray-800">Telefon</h4>
+                                    <p class="text-gray-600">
+                                        <a href="tel:+4967311234567" class="hover:text-blue-600">06731 1234567</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 mt-1">
+                                    <i class="fas fa-envelope text-blue-500 text-xl"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-lg font-medium text-gray-800">E-Mail</h4>
+                                    <p class="text-gray-600">
+                                        <a href="mailto:info@wonnegau-energy.de" class="hover:text-blue-600">info@wonnegau-energy.de</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 mt-1">
+                                    <i class="fas fa-clock text-yellow-400 text-xl"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-lg font-medium text-gray-800">Öffnungszeiten</h4>
+                                    <p class="text-gray-600">
+                                        Mo-Fr: 8:00 - 18:00 Uhr<br>
+                                        Sa: nach Vereinbarung
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between">
+                <div class="mb-8 md:mb-0">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-solar-panel text-yellow-400 text-2xl mr-2"></i>
+                        <span class="text-xl font-bold">WonneGau <span class="text-blue-400">Energy</span></span>
+                    </div>
+                    <p class="text-gray-400 max-w-xs">
+                        Ihr regionaler Partner für Photovoltaik-Komplettlösungen in Rheinhessen und Umgebung.
+                    </p>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Unternehmen</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#about" class="text-gray-400 hover:text-yellow-400 transition">Über uns</a></li>
+                            <li><a href="#services" class="text-gray-400 hover:text-yellow-400 transition">Leistungen</a></li>
+                            <li><a href="#projects" class="text-gray-400 hover:text-yellow-400 transition">Projekte</a></li>
+                            <li><a href="#contact" class="text-gray-400 hover:text-yellow-400 transition">Kontakt</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Rechtliches</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-gray-400 hover:text-yellow-400 transition">Impressum</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-yellow-400 transition">Datenschutz</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-yellow-400 transition">AGB</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Folgen Sie uns</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-gray-400 hover:text-yellow-400 transition text-xl">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-yellow-400 transition text-xl">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-yellow-400 transition text-xl">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 WonneGau Energy GmbH. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple form submission handler
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Vielen Dank für Ihre Nachricht! Wir melden uns schnellstmöglich bei Ihnen.');
+            this.reset();
+        });
+
+        // Mobile menu toggle would go here in a real implementation
+    </script>
+</body>
+</html>
